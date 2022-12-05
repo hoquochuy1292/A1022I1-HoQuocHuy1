@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhập điểm giữa kì: </p>
+<input id="A" type="text"><br>
+<p>Nhập điểm cuối kì: </p>
+<input id="B" type="text"><br>
+<p onclick="result()">Result</p>
+<p id="output"></p>
+
+</body>
+</html>
+<script>
+    function result() {
+        let a = +document.getElementById('A').value;
+        let b = +document.getElementById('B').value;
+        let hocluc= ((b*2)+a)/3
+
+        if (hocluc<5){
+            document.getElementById('output').innerText ='hoc luc yeu';
+        }else if(hocluc<6.5){
+            document.getElementById('output').innerText ='hoc luc trung binh';
+        }else if(hocluc<8){
+            document.getElementById('output').innerText ='hoc luc kha';
+        }else{
+            document.getElementById('output').innerText ='hoc luc gioi';
+
+    }}
+</script>

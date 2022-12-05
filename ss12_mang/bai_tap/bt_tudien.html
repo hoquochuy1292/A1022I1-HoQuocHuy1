@@ -1,0 +1,37 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tu dien</title>
+</head>
+<body>
+<form action="">
+    Từ Vựng:
+    <input id="A" type="text"/>
+
+</form>
+<button onclick="result">tra</button>
+</body>
+<script>
+    const input = document.getElementById('A').value;
+    const vietNam = [
+        'xin chào',
+        'tạm biệt',
+        'tên'
+    ];
+    const english = [
+        'hello',
+        'bye',
+        'name'
+    ];
+    let e = "<hr>"
+    for (let i = 0; i<english.length; ++i){
+        if (input == vietNam[i]){
+           e = english[i];
+        }
+
+
+    }
+    document.getElementById("result").innerText=e;
+</script>
+</html>

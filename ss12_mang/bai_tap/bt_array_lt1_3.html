@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arr = [];
+    for (let i = 0; ; i++) {
+        let number = prompt(`Nhập số nguyên index ${i}: , "Stop để dừng vòng lặp"`);
+        if (number === "Stop") {
+            break;
+        }
+        arr.push(+number);
+    }
+    let max = arr[0];
+    let sum = 0;
+    let total = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+        total = sum / arr.length;
+        if (max < arr[i]) {
+            max = arr[i];
+        }
+    }
+    console.log(`Giá trị lớn nhất: ${max} \nGiá trị trung bình: ${total}`);
+</script>
+</html>

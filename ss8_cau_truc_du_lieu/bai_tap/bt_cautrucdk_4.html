@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhập a: </p>
+<input id="A" type="text"><br>
+<p>Nhập b: </p>
+<input id="B" type="text"><br>
+<p>Nhập c: </p>
+<input id="C" type="text"><br>
+<p onclick="result()">Result</p>
+<p id="output"></p>
+
+</body>
+</html>
+<script>
+    function result() {
+        let a = +document.getElementById('A').value;
+        let b = +document.getElementById('B').value;
+        let c = +document.getElementById('C').value;
+
+        if (a>b && a>c){
+            document.getElementById('output').innerText ='Max is:'+a;
+        }else if(b>a && b>c){
+            document.getElementById('output').innerText ='Max is:'+b;
+        }else{
+            document.getElementById('output').innerText ='Max is:'+c;
+        }
+
+
+    }
+</script>

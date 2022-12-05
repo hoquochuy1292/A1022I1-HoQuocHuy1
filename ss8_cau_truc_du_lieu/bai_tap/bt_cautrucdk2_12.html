@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>so tien ban dau: </p>
+<input id="A" type="text"><br>
+<p>so thang cho vay: </p>
+<input id="B" type="text"><br>
+<p>lai xuat ngan hang: </p>
+<input id="C" type="text"><br>
+
+
+<p onclick="result()">result</p>
+<p id="output"></p>
+
+</body>
+</html>
+<script>
+    function result() {
+        let monney = +document.getElementById(A).value;
+        let month = +document.getElementById(B).value;
+        let laixuat = +document.getElementById(C).value;
+        let laiOne = (monney*(1 + laixuat)*(month*month))-monney;
+
+            document.getElementById('output').innerText ='tong no la:' + (monney+laiOne) + 'dong';
+
+
+
+
+    }
+</script>

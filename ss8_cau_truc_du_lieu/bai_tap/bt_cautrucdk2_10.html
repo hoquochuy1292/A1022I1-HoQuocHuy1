@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>nhap so kWh: </p>
+<input id="A" type="text"><br>
+
+
+<p onclick="result()">result</p>
+<p id="output"></p>
+
+</body>
+</html>
+<script>
+    function result() {
+        let a = +document.getElementById('A').value;
+        if (a>0 && a < 51){
+            document.getElementById('output').innerText ='so tien dien la:' + (a*600) + 'dong';
+        }else if (a<101){
+            document.getElementById('output').innerText ='so tien dien la:' + (a*865) + 'dong';
+        }else if (a<151){
+            document.getElementById('output').innerText ='so tien dien la:' + (a*1135) + 'dong';
+        }else if (a<201){
+            document.getElementById('output').innerText ='so tien dien la:' + (a*1495) + 'dong';
+        }else if (a<301){
+            document.getElementById('output').innerText ='so tien dien la:' + (a*1620) + 'dong';
+        }else if (a<401){
+            document.getElementById('output').innerText ='so tien dien la:' + (a*1740) + 'dong';
+        }else{
+            document.getElementById('output').innerText ='so tien dien la:' + (a*1790) + 'dong';
+        }
+    }
+</script>

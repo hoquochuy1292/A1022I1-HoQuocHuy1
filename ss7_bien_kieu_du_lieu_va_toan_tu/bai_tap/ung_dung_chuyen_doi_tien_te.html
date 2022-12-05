@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyen doi tien te</title>
+
+</head>
+<body>
+
+
+<table>
+    <tr>
+        <td>
+            <b>Amount</b><br>
+            <input id="Amount" type="text">
+        </td>
+        <td>
+            <b>From currency</b><br>
+            <select id="select1" style="width: 130px;" name="" >
+                <option value="a">Việt Nam</option>
+                <option value="b">USD</option>
+            </select>
+        </td>
+        <td>
+            <b>To Currency</b><br>
+            <select id="select2" style="width: 100px" name="">
+                <option value="b">Việt Nam</option>
+                <option value="a">USA</option>
+            </select>
+        </td>
+        <td><br>
+            <buttom onclick="submit()">Convert</buttom>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Result:
+        </td>
+        <td id="result"></td>
+    </tr>
+</table>
+</body>
+<script>
+    function submit() {
+        var amount = document.getElementById('Amount').value;
+        var select1 = document.getElementById('select1').value;
+        var select2 = document.getElementById('select2').value;
+            if (select1=='a' && select2=='a'){
+                document.getElementById('result').innerText = amount/24000;
+            } else if (select1=='b' && select2=='b'){
+            document.getElementById('result').innerText = amount * 24000;
+            }else{
+
+                document.getElementById('result').innerText = amount;
+            }
+    }
+</script>
+
+</html>

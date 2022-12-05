@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhập tuổi: </p>
+<input id="A" type="text"><br>
+<p onclick="result()">Result</p>
+<p id="output"></p>
+
+</body>
+</html>
+<script>
+    function result() {
+        let a = +document.getElementById('A').value;
+
+        if (a>15){
+            document.getElementById('output').innerText ='đủ điểu kiện';
+        }else{
+            document.getElementById('output').innerText ='không đủ điểu kiện';
+        }
+
+    }
+</script>

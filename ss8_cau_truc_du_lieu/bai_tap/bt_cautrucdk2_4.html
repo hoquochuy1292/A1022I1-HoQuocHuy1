@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>cạnh a: </p>
+<input id="A" type="text"><br>
+<p>cạnh b: </p>
+<input id="B" type="text"><br>
+
+<p onclick="result()">diện tích hình chữ nhật la:</p>
+<p id="output"></p>
+
+</body>
+</html>
+<script>
+    function result() {
+        let a = +document.getElementById('A').value;
+        let b = +document.getElementById('B').value;
+        let dienTich = a*b;
+        document.getElementById('output').innerText =dienTich;
+
+    }
+</script>

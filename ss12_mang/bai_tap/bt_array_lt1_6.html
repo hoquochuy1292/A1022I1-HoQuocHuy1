@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        arr[i] = +prompt(`Nhập số nguyên index ${i}: `);
+    }
+    let v = +prompt("Nhập số nguyên V: ");
+    if (arr.includes(v)) {
+        console.log("V is in the array");
+    } else {
+        console.log("V is not in the array");
+    }
+</script>
+</html>

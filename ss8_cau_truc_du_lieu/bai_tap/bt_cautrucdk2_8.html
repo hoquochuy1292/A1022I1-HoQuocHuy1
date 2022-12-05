@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>a: </p>
+<input id="A" type="text"><br>
+
+
+<p onclick="result()">result</p>
+<p id="output"></p>
+
+</body>
+</html>
+<script>
+    function result() {
+        let a = +document.getElementById('A').value;
+        if (a>0 && a<120){
+            document.getElementById('output').innerText = a + ' la tuoi cua 1 nguoi';
+        }else{
+            document.getElementById('output').innerText = a + ' khong phai la tuoi cua 1 nguoi';
+        }
+
+    }
+</script>

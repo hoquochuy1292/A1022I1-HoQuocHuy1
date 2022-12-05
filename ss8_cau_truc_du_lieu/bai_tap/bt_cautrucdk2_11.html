@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>nhap thu nhap ca nhan: </p>
+<input id="A" type="text"><br>
+
+
+<p onclick="result()">result</p>
+<p id="output"></p>
+
+</body>
+</html>
+<script>
+    function result() {
+        let a = +document.getElementById('A').value;
+        if ( a>0 && a<5000001){
+            document.getElementById('output').innerText ='so thue phai nop la:' + a*0.05 + 'dong';
+        }else if (a<10000001){
+            document.getElementById('output').innerText ='so thue phai nop la:' + a*0.1 + 'dong';
+        }else if (a<18000001){
+            document.getElementById('output').innerText ='so thue phai nop la:' + a*0.15 + 'dong';
+        }else if (a<32000001){
+            document.getElementById('output').innerText ='so thue phai nop la:' + a*0.2 + 'dong';
+        }else if (a<52000001){
+            document.getElementById('output').innerText ='so thue phai nop la:' + a*0.25 + 'dong';
+        }else if (a<80000001){
+            document.getElementById('output').innerText ='so thue phai nop la:' + a*0.3 + 'dong';
+        }else{
+            document.getElementById('output').innerText ='so thue phai nop la:' + a*0.35 + 'dong';
+        }
+    }
+</script>
