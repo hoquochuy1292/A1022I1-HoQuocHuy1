@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiem tra so nguyen to</title>
+</head>
+<body>
+
+</body>
+<script>
+    function isPrime(number) {
+        let snt = true;
+
+        if (number < 2) {
+            snt = false;
+        }
+        for (let i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i === 0) {
+                snt = false;
+            }
+        }
+
+        return snt;
+
+    }
+    document.write(isPrime(7));
+</script>
+</html>
